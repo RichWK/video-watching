@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+
+  h1 {
+    @apply text-2xl mb-4;
+  }
+
+  p {
+    @apply mb-3;
+  }
+
+  a {
+    @apply text-green-700 focus:outline-none;
+  }
+
+  code {
+    @apply px-2 py-1 bg-gray-300 rounded;
+  }
+  
+}
