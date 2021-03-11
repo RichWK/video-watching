@@ -3,9 +3,11 @@
 
 export type timeOfDayType = 'dawn' | 'morning' | 'afternoon' | 'dusk' | 'night'
 
-// export interface PersonType {
-//     name: string
-//     age: number
-//     favouriteFoods: string[]
-// }
+export type VideosType = VideoType[]
+
+export interface VideoType {
+    name: string
+    duration: string
+    image: string
+}
 

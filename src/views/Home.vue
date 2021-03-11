@@ -19,7 +19,8 @@
 // It can then be used as demonstrated as below with 'timeOfDay'.
 
 import { defineComponent, PropType } from 'vue'
-import { timeOfDayType } from '../types'
+import { timeOfDayType, VideosType } from '../types'
+import VideoData from '../assets/videos.json'
 
 import VideoPanel from '../components/VideoPanel.vue'
 
@@ -30,8 +31,12 @@ export default defineComponent({
   },
   data() {
     return {
-      'count': 0
+      'count': 0,
+      videos: [] as VideosType
     }
+  },
+  mounted() {
+    this.videos = VideoData;
   },
   props: {
     timeOfDay: {
