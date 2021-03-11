@@ -5,6 +5,7 @@
   <VideoPanel
     v-for="video in videos"
     :duration="video.duration"
+    :imageName="video.imageName"
     :name="video.name"
   />
   <button

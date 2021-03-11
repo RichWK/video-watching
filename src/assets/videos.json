@@ -2,22 +2,22 @@
     {
         "name": "AuthentiSIGN® basics",
         "duration": "08:36",
-        "image": "authentisign.jpg"
+        "imageName": "authentisign.jpg"
     },
     {
         "name": "Hazards of older homes",
         "duration": "33:05",
-        "image": "hazards.jpg"
+        "imageName": "hazards.jpg"
     },
     {
         "name": "Tax tips for selling real estate",
         "duration": "08:36",
-        "image": "tax-tips.jpg"
+        "imageName": "tax-tips.jpg"
     },
     {
         "name": "Avoiding complaints: understanding the rules of cooperation",
         "duration": "08:36",
-        "image": "avoiding-complaints.jpg"
+        "imageName": "avoiding-complaints.jpg"
     }
 ]
 

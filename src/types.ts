@@ -8,6 +8,6 @@ export type VideosType = VideoType[]
 export interface VideoType {
     name: string
     duration: string
-    image: string
+    imageName: string
 }
 
