@@ -1,6 +1,6 @@
 <template>
 
-  <h1>Video courses</h1>
+  <h1 class="font-serif">Video courses</h1>
   <p>These are currently available to you.</p>
   <VideoPanel
     v-for="video in videos"
@@ -40,7 +40,6 @@ export default defineComponent({
   },
   mounted() {
     this.videos = VideoData;
-    console.log( this.videos );
   },
   props: {
     timeOfDay: {

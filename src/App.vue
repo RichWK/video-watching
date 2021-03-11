@@ -1,8 +1,10 @@
 <template>
 
   <Navigation />
-  <Breadcrumbs />
-  <router-view />
+  <div class="px-4">
+    <Breadcrumbs />
+    <router-view />
+  </div>
   
 </template>
 

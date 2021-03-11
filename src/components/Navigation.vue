@@ -1,6 +1,6 @@
 <template>
 
-  <div class="bg-green-500 p-4">
+  <div class="bg-rebgv-green p-4">
     <img
       alt="Logo for the Real Estate Board of Greater Vancouver"
       class="mx-auto"
