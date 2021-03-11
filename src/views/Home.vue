@@ -2,8 +2,11 @@
 
   <h1>Video courses</h1>
   <p>These are currently available to you.</p>
-  <VideoPanel />
-
+  <VideoPanel
+    v-for="video in videos"
+    :duration="video.duration"
+    :name="video.name"
+  />
   <button
     @click="count++"
     class="bg-green-300 text-green-800 font-bold mt-6 rounded px-4 pt-2 pb-3 focus:outline-none"
@@ -37,6 +40,7 @@ export default defineComponent({
   },
   mounted() {
     this.videos = VideoData;
+    console.log( this.videos );
   },
   props: {
     timeOfDay: {

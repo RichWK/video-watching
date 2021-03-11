@@ -1,8 +1,8 @@
 <template>
 
   <div>
-    <h2>AuthentiSIGN® basics</h2>
-    <h6>08:36</h6>
+    <h2>{{ name }}</h2>
+    <h6>{{ duration }}</h6>
   </div>
 
 </template>
@@ -12,7 +12,17 @@
 import { defineComponent } from 'vue'
 
 export default defineComponent({
-  name: 'Breadcrumbs'
+  name: 'VideoPanel',
+  props: {
+    name: {
+      type: String,
+      required: true
+    },
+    duration: {
+      type: String,
+      required: true
+    }
+  }
 })
 
 </script>
