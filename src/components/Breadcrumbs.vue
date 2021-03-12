@@ -1,6 +1,6 @@
 <template>
 
-  <div class="bg-rebgv-yellow w-36 h-1.5 my-8"></div>
+  
 
 </template>
 
