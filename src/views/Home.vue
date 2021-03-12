@@ -25,7 +25,7 @@
 // It can then be used as demonstrated as below with 'timeOfDay'.
 
 import { defineComponent, PropType } from 'vue'
-import { timeOfDayType, VideosType } from '../types'
+import { VideosType } from '../types'
 import VideoData from '../assets/videos.json'
 
 import Heading from '../components/Heading.vue'
@@ -45,11 +45,6 @@ export default defineComponent({
   },
   mounted() {
     this.videos = VideoData;
-  },
-  props: {
-    timeOfDay: {
-      type: String as PropType<timeOfDayType>
-    }
   }
 })
 
