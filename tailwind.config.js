@@ -9,8 +9,9 @@ module.exports = {
     extend: {
       colors: {
         'rebgv-green': '#1fad58',
-        'rebgv-pale-green': 'e7fff0',
-        'rebgv-yellow': '#f8e729'
+        'rebgv-pale-green': '#e7fff0',
+        'rebgv-yellow': '#f8e729',
+        'rebgv-gray': '#465451'
       }
     },
   },

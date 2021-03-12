@@ -11,8 +11,16 @@
   }
 
   p {
-    @apply font-sans mb-3;
+    @apply font-sans mb-8;
   }
   
+}
+
+@layer utilities {
+
+  .lower-third-gradient {
+    background: linear-gradient(to top, rgba(231,255,240,1) 24%, rgba(255,255,255,0) 60%);
+  }
+
 }
 
