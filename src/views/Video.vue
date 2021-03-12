@@ -1,6 +1,6 @@
 <template>
 
-  <h1>About</h1>
+  <h1>Video</h1>
 
 </template>
 
@@ -9,7 +9,7 @@
 import { defineComponent } from 'vue'
 
 export default defineComponent({
-  name: 'About'
+  name: 'Video'
 })
 
 </script>
