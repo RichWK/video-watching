@@ -1,8 +1,8 @@
 <template>
 
   <Heading title="Video courses" />
-  <p>These are currently available to you.</p>
-  <div class="grid gap-7 grid-cols-1 sm:grid-cols-2 max-w-6xl">
+  <p>{{ message }}</p>
+  <div class="grid gap-7 grid-cols-1 sm:grid-cols-2 max-w-6xl mb-16">
     <router-link v-for="(video, i) in videos" :key="i" :to="{ name: video.simpleName }">
       <VideoPanel
         :duration="video.duration"
@@ -11,12 +11,6 @@
       />
     </router-link>
   </div>
-  <button
-    @click="count++"
-    class="bg-green-300 text-green-800 font-bold mt-6 mb-10 rounded px-4 pt-2 pb-3 focus:outline-none"
-  >
-    Count is: {{ count }}
-  </button>
 
 </template>
 
@@ -35,9 +29,15 @@ export default defineComponent({
     Heading,
     VideoPanel
   },
+  computed: {
+    message(): string {
+      return this.videos.length > 0 ?
+        "These are currently available to you." :
+        "It looks like you don't have any videos currently available to watch."
+    } 
+  },
   data() {
     return {
-      'count': 0,
       videos: [] as VideosType
     }
   },
