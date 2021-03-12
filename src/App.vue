@@ -1,7 +1,7 @@
 <template>
 
   <Navigation />
-  <div class="px-4">
+  <div class="px-4 xs:px-7">
     <Breadcrumbs />
     <router-view />
   </div>

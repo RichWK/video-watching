@@ -2,12 +2,14 @@
 
   <h1 class="font-serif">Video courses</h1>
   <p>These are currently available to you.</p>
-  <VideoPanel
-    v-for="video in videos"
-    :duration="video.duration"
-    :imageName="video.imageName"
-    :name="video.name"
-  />
+  <div class="grid gap-7 grid-cols-1 sm:grid-cols-2 max-w-6xl">
+    <VideoPanel
+      v-for="video in videos"
+      :duration="video.duration"
+      :imageName="video.imageName"
+      :name="video.name"
+    />
+  </div>
   <button
     @click="count++"
     class="bg-green-300 text-green-800 font-bold mt-6 rounded px-4 pt-2 pb-3 focus:outline-none"

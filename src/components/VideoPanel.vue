@@ -1,6 +1,6 @@
 <template>
 
-  <div class="relative mb-8">
+  <div class="relative">
     <img
       alt="Still frame from the video"
       :src="imagePath"

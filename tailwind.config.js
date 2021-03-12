@@ -12,6 +12,9 @@ module.exports = {
         'rebgv-pale-green': '#e7fff0',
         'rebgv-yellow': '#f8e729',
         'rebgv-gray': '#465451'
+      },
+      screens: {
+        'xs': '500px'
       }
     },
   },
