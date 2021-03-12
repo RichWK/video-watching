@@ -3,12 +3,13 @@
   <Heading title="Video courses" />
   <p>These are currently available to you.</p>
   <div class="grid gap-7 grid-cols-1 sm:grid-cols-2 max-w-6xl">
-    <VideoPanel
-      v-for="video in videos"
-      :duration="video.duration"
-      :imageName="video.imageName"
-      :name="video.name"
-    />
+    <router-link v-for="(video, i) in videos" :key="i" :to="{ name: video.simpleName }">
+      <VideoPanel
+        :duration="video.duration"
+        :imageName="video.imageName"
+        :name="video.name"
+      />
+    </router-link>
   </div>
   <button
     @click="count++"
@@ -21,15 +22,12 @@
 
 <script lang="ts">
 
-// Applying TypeScript to props — it works by importing 'PropType' from Vue.
-// It can then be used as demonstrated as below with 'timeOfDay'.
-
 import { defineComponent, PropType } from 'vue'
 import { VideosType } from '../types'
 import VideoData from '../assets/videos.json'
-
 import Heading from '../components/Heading.vue'
 import VideoPanel from '../components/VideoPanel.vue'
+import { removeSpecialCharacters } from '../helpers'
 
 export default defineComponent({
   name: 'Home',
@@ -44,7 +42,9 @@ export default defineComponent({
     }
   },
   mounted() {
-    this.videos = VideoData;
+    this.videos = VideoData.map( ( video ) => 
+      ( { ...video, simpleName: removeSpecialCharacters( video.name ) } )
+    );
   }
 })
 
