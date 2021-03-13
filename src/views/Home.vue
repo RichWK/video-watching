@@ -16,12 +16,13 @@
 
 <script lang="ts">
 
-import { defineComponent, PropType } from 'vue'
+import { defineComponent } from 'vue'
+import { removeSpecialCharacters } from '../helpers'
 import { VideosType } from '../types'
 import VideoData from '../assets/videos.json'
+
 import Heading from '../components/Heading.vue'
 import VideoPanel from '../components/VideoPanel.vue'
-import { removeSpecialCharacters } from '../helpers'
 
 export default defineComponent({
   name: 'Home',
