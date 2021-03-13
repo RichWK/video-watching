@@ -24,8 +24,6 @@ VideoData.forEach( ( video ) =>
   )
 );
 
-console.log( routes );
-
 const router = createRouter({
   history: createWebHistory(),
   routes,

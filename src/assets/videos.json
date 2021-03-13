@@ -1,23 +1,31 @@
 [
     {
         "name": "AuthentiSIGN® basics",
+        "description": "I’m some optional descriptive text. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
         "duration": "08:36",
-        "imageName": "authentisign.jpg"
+        "imageName": "authentisign.jpg",
+        "percentageComplete": 24
     },
     {
         "name": "Hazards of older homes",
+        "description": "I’m some optional descriptive text. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
         "duration": "33:05",
-        "imageName": "hazards.jpg"
+        "imageName": "hazards.jpg",
+        "percentageComplete": 78
     },
     {
         "name": "Tax tips for selling real estate",
+        "description": "I’m some optional descriptive text. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
         "duration": "20:51",
-        "imageName": "tax-tips.jpg"
+        "imageName": "tax-tips.jpg",
+        "percentageComplete": 0
     },
     {
         "name": "Avoiding complaints: understanding the rules of cooperation",
+        "description": "I’m some optional descriptive text. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
         "duration": "18:22",
-        "imageName": "avoiding-complaints.jpg"
+        "imageName": "avoiding-complaints.jpg",
+        "percentageComplete": 0
     }
 ]
 
