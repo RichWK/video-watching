@@ -22,5 +22,9 @@
     background: linear-gradient(to top, rgba(231,255,240,1) 24%, rgba(255,255,255,0) 60%);
   }
 
+  .backdrop-filter {
+    backdrop-filter: blur(10px);
+  }
+
 }
 

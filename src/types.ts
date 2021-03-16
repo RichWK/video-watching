@@ -1,5 +1,7 @@
 import { Component } from 'vue'
 
+export type ButtonType = "Confirm" | "Cancel"
+
 export type VideosType = VideoType[]
 export interface VideoType {
     duration: string
