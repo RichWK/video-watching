@@ -1,9 +1,11 @@
 <template>
 
-  <Navigation />
-  <div class="px-4 xs:px-7">
-    <Breadcrumbs />
-    <router-view />
+  <div class="mx-auto inset-x-0 max-w-screen-xxl">
+    <Navigation class="sm:ml-8 lg:ml-16" />
+    <div class="px-6 sm:px-8 lg:px-16 pb-16 xl:pb-24">
+      <Breadcrumbs />
+      <router-view />
+    </div>
   </div>
   
 </template>

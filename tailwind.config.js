@@ -14,7 +14,8 @@ module.exports = {
         'rebgv-gray': '#465451'
       },
       screens: {
-        'xs': '500px'
+        'xs': '500px',
+        'xxl': '1440px'
       }
     },
   },
