@@ -1,7 +1,7 @@
 <template>
 
   <Heading title="Video courses" />
-  <p>{{ message }}</p>
+  <p class="mb-10">{{ message }}</p>
   <div class="grid gap-7 grid-cols-1 sm:grid-cols-2 max-w-6xl mb-16">
     <router-link v-for="(video, i) in videos" :key="i" :to="{ name: video.simpleName }">
       <VideoPanel

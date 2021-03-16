@@ -22,7 +22,7 @@
       v-if="identityCheck"
       class="flex flex-col items-center justify-center absolute inset-0 z-50 backdrop-filter"
     >
-      <p class="text-xl">Please confirm you are Adeline Liu.</p>
+      <p class="text-xl mb-8">Please confirm you are Adeline Liu.</p>
       <div>
         <Button @click="toggleIdentityCheck" class="mr-8" text="Confirm" />
         <Button @click="toggleIdentityCheck" text="Cancel" />
