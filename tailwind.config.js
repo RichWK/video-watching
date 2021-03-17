@@ -13,6 +13,9 @@ module.exports = {
         'rebgv-yellow': '#f8e729',
         'rebgv-gray': '#465451'
       },
+      minWidth: {
+        '1': '0.25rem'
+      },
       screens: {
         'xs': '500px',
         'xxl': '1440px'
