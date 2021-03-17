@@ -7,7 +7,11 @@
       :duration="duration"
       :imageName="imageName"
     />
-    <ProgressBar class="lg:col-start-1 lg:col-span-4" :percentageComplete="percentageComplete" />
+    <ProgressBar
+      class="lg:col-start-1 lg:col-span-4"
+      :labelling="true"
+      :percentageComplete="percentageComplete"
+    />
     <p v-if="description" class="lg:mt-0 lg:col-start-5 lg:row-start-1">{{ description }}</p>
   </div>
 
