@@ -1,6 +1,6 @@
 <template>
 
-  <div class="relative select-none">
+  <div class="relative select-none max-w-max">
     <img
       alt="Still frame from the video"
       :src="imagePath"
@@ -24,7 +24,7 @@
     >
       <p class="text-xl mb-8">Please confirm you are Adeline Liu.</p>
       <div>
-        <Button @click="toggleIdentityCheck" class="mr-8" text="Confirm" />
+        <Button @click="toggleIdentityCheck" class="mr-8 lg:mr-12" text="Confirm" />
         <Button @click="toggleIdentityCheck" text="Cancel" />
       </div>
     </div>

@@ -1,11 +1,14 @@
 <template>
 
   <Heading :title="name" />
-  <VideoPanel
-    :duration="duration"
-    :imageName="imageName"
-  />
-  <p v-if="description" class="mt-8">{{ description }}</p>
+  <div class="grid lg:gap-10 lg:grid-cols-5">
+    <VideoPanel
+      class="lg:col-span-4"
+      :duration="duration"
+      :imageName="imageName"
+    />
+    <p v-if="description" class="mt-8 lg:mt-0 lg:col-start-5">{{ description }}</p>
+  </div>
 
 </template>
 

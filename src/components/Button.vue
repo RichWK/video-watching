@@ -1,6 +1,6 @@
 <template>
 
-  <button :class="[backgroundColor,'text-white font-bold py-2 px-5']">{{ text }}</button>
+  <button :class="[backgroundColor,'text-white font-bold py-2 px-5 lg:py-4 lg:px-10']">{{ text }}</button>
 
 </template>
 

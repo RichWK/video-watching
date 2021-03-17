@@ -2,7 +2,7 @@
 
   <Heading title="Video courses" />
   <p class="mb-10">{{ message }}</p>
-  <div class="grid gap-7 grid-cols-1 sm:grid-cols-2 lg:gap-12">
+  <div class="grid gap-7 sm:grid-cols-2 lg:gap-12">
     <router-link v-for="(video, i) in videos" :key="i" :to="{ name: video.simpleName }">
       <VideoPanel
         :duration="video.duration"
