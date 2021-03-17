@@ -8,6 +8,7 @@
         :duration="video.duration"
         :imageName="video.imageName"
         :name="video.name"
+        :percentageComplete="video.percentageComplete"
       />
     </router-link>
   </div>

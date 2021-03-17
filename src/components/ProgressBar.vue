@@ -1,6 +1,6 @@
 <template>
 
-  <div class="flex h-6 items-center font-bold">
+  <div :class="['flex items-center font-bold', labelling ? 'h-6' : 'h-1' ]">
     <div
       :class="[ 'relative inline-block bg-rebgv-green h-full', {'min-w-1': labelling} ]"
       :style="widthAsCss"

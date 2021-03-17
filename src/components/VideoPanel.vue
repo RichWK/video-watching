@@ -5,19 +5,26 @@
       alt="Still frame from the video"
       :src="imagePath"
     />
-    <div class="absolute inset-0 z-10 bg-rebgv-pale-green opacity-75"></div>
-    <div v-if="name" class="lower-third-gradient absolute inset-0 z-20"></div>
-    <div class="absolute inset-0 z-30 m-5 mt-4 font-bold select-none text-rebgv-gray">
-      <h2 v-if="name" class="absolute bottom-0 text-xl truncate w-full">{{ name }}</h2>
+    <div class="absolute inset-0 z-0 bg-rebgv-pale-green opacity-75"></div>
+    <div v-if="name" class="lower-third-gradient absolute inset-0 z-10"></div>
+    <div class="absolute inset-0 z-20 m-5 mt-4 font-bold select-none text-rebgv-gray">
+      <h2 v-if="name" class="absolute bottom-0 text-xl truncate w-full">
+        {{ name }}
+      </h2>
       <h6 class="absolute top-0 right-0">{{ duration }}</h6>
     </div>
     <div
       v-if="showPlayButton"
-      class="flex justify-center absolute inset-0 z-40 cursor-pointer"
+      class="flex justify-center absolute inset-0 z-30 cursor-pointer"
       @click="toggleIdentityCheck"
     >
       <img alt="Play button" width="60" src="../assets/play.svg" />
     </div>
+    <ProgressBar
+      v-if="name"
+      class="absolute top-0 w-full z-40"
+      :percentageComplete="percentageComplete"
+    />
     <div
       v-if="identityCheck"
       class="flex flex-col items-center justify-center absolute inset-0 z-50 backdrop-filter"
@@ -36,11 +43,13 @@
 
 import { defineComponent } from 'vue'
 import Button from './Button.vue'
+import ProgressBar from './ProgressBar.vue'
 
 export default defineComponent({
   name: 'VideoPanel',
   components: {
-    Button
+    Button,
+    ProgressBar
   },
   computed: {
     imagePath(): string {
@@ -69,7 +78,11 @@ export default defineComponent({
       type: String,
       required: true
     },
-    name: String
+    name: String,
+    percentageComplete: {
+      type: Number,
+      default: 0
+    }
   }
 })
 
