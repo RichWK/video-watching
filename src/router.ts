@@ -24,10 +24,15 @@ VideoData.forEach( ( video ) =>
   )
 );
 
-const router = createRouter({
-  history: createWebHistory(),
-  routes,
-});
+const router = createRouter(
+  {
+    history: createWebHistory(),
+    routes,
+    scrollBehavior( to, from, savedPosition ) {
+      return savedPosition ? savedPosition : { left: 0, top: 0 }
+    }
+  }
+);
 
 export default router;
 
