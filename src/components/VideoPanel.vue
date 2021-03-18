@@ -53,7 +53,7 @@ export default defineComponent({
   },
   computed: {
     imagePath(): string {
-      return '../public/' + this.imageName;
+      return '/' + this.imageName;
     },
     showPlayButton(): boolean {
       return !this.name && !this.identityCheck;
