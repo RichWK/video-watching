@@ -6,7 +6,7 @@
       :src="imagePath"
     />
     <div class="absolute inset-0 z-0 bg-rebgv-pale-green opacity-75"></div>
-    <div v-if="name" class="lower-third-gradient absolute inset-0 z-10"></div>
+    <div v-if="name" class="lower-third-gradient absolute inset-x-0 bottom-0 h-5/6 z-10"></div>
     <div class="absolute inset-0 z-20 m-5 mt-4 font-bold select-none text-rebgv-gray">
       <h2 v-if="name" class="absolute bottom-0 text-xl truncate w-full">
         {{ name }}
@@ -15,7 +15,7 @@
     </div>
     <div
       v-if="showPlayButton"
-      class="flex justify-center absolute inset-0 z-30 cursor-pointer"
+      class="flex justify-center radial-gradient absolute inset-0 z-30 cursor-pointer"
       @click="toggleIdentityCheck"
     >
       <img alt="Play button" width="60" src="../assets/play.svg" />

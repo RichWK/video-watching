@@ -22,6 +22,10 @@
     background: linear-gradient(to top, rgba(231,255,240,1) 24%, rgba(255,255,255,0) 60%);
   }
 
+  .radial-gradient {
+    background: radial-gradient(circle, rgba(231,255,240,1) 0%, rgba(255,255,255,0) 35%);
+  }
+
   .backdrop-filter {
     backdrop-filter: blur(10px);
   }
